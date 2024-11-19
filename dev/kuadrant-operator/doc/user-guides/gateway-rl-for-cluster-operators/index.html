@@ -567,6 +567,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dns-operator/docs/provider/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring DNS Providers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -937,7 +958,7 @@
             
   
   <span class="md-ellipsis">
-    DNS configuration and load balancing
+    DNS configuration
   </span>
   
 
@@ -947,30 +968,9 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
-            DNS configuration and load balancing
+            DNS configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../dnshealthchecks/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DNS Health Checks
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -3173,6 +3173,70 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3_7" id="__nav_9_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DNS Operator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            DNS Operator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dns-operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3577,7 +3641,7 @@ where it installs Istio, Kubernetes Gateway API and Kuadrant itself.</p>
 </span></code></pre></div>
 <p>Create a Kuadrant <code>RateLimitPolicy</code> to configure rate limiting:</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-n<span class="w"> </span>gateway-system<span class="w"> </span>-f<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="s">apiVersion: kuadrant.io/v1beta2</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="s">apiVersion: kuadrant.io/v1</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="s">kind: RateLimitPolicy</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="s">metadata:</span>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="s">  name: gw-rlp</span>
@@ -3591,9 +3655,8 @@ where it installs Istio, Kubernetes Gateway API and Kuadrant itself.</p>
 </span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="s">      rates:</span>
 </span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
 </span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="s">      - limit: 5</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="s">        duration: 10</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="s">        unit: second</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="s">EOF</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="s">        window: 10s</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="s">EOF</span>
 </span></code></pre></div>
 <blockquote>
 <p><strong>Note:</strong> It may take a couple of minutes for the RateLimitPolicy to be applied depending on your cluster.</p>

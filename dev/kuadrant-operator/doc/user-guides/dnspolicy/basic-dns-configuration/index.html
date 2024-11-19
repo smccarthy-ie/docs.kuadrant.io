@@ -8,25 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://docs.kuadrant.io/dev/kuadrant-operator/doc/dnshealthchecks/">
+        <link rel="canonical" href="https://docs.kuadrant.io/dev/kuadrant-operator/doc/user-guides/dnspolicy/basic-dns-configuration/">
       
       
-        <link rel="prev" href="../user-guides/secure-protect-connect-single-multi-cluster/">
       
       
-        <link rel="next" href="../../../dns-operator/docs/provider/">
-      
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
-        <title>DNS Health Checks - Kuadrant Documentation</title>
+        <title>Basic dns configuration - Kuadrant Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.10ba22f1.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.10ba22f1.min.css">
       
       
 
@@ -45,9 +41,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dns-health-checks" class="md-skip">
+        <a href="#basic-dns-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -81,7 +77,7 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   These docs are unstable, from our development branches (main).
-  <a href="../../../.."> 
+  <a href="../../../../../.."> 
     <strong>Click here to go to latest, stable docs.</strong>
   </a>
 
@@ -98,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Kuadrant Documentation" class="md-header__button md-logo" aria-label="Kuadrant Documentation" data-md-component="logo">
+    <a href="../../../../.." title="Kuadrant Documentation" class="md-header__button md-logo" aria-label="Kuadrant Documentation" data-md-component="logo">
       
-  <img src="../../../assets/images/logo.png" alt="logo">
+  <img src="../../../../../assets/images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -117,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DNS Health Checks
+              Basic dns configuration
             
           </span>
         </div>
@@ -204,9 +200,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Kuadrant Documentation" class="md-nav__button md-logo" aria-label="Kuadrant Documentation" data-md-component="logo">
+    <a href="../../../../.." title="Kuadrant Documentation" class="md-nav__button md-logo" aria-label="Kuadrant Documentation" data-md-component="logo">
       
-  <img src="../../../assets/images/logo.png" alt="logo">
+  <img src="../../../../../assets/images/logo.png" alt="logo">
 
     </a>
     Kuadrant Documentation
@@ -233,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -288,7 +284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started-single-cluster/" class="md-nav__link">
+      <a href="../../../../../getting-started-single-cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -309,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started-multi-cluster/" class="md-nav__link">
+      <a href="../../../../../getting-started-multi-cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -337,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/docs/design/architectural-overview-v1/" class="md-nav__link">
+      <a href="../../../../../architecture/docs/design/architectural-overview-v1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -392,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/install-kubernetes/" class="md-nav__link">
+      <a href="../../../install/install-kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -413,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/install-openshift/" class="md-nav__link">
+      <a href="../../../install/install-openshift/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dns/" class="md-nav__link">
+      <a href="../../../dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/dnspolicy/" class="md-nav__link">
+      <a href="../../../reference/dnspolicy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,11 +549,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/gateway-dns/" class="md-nav__link">
+      <a href="../../gateway-dns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Gateway DNS for Cluster Operators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../dns-operator/docs/provider/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring DNS Providers
   </span>
   
 
@@ -617,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tls/" class="md-nav__link">
+      <a href="../../../tls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -638,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/tlspolicy/" class="md-nav__link">
+      <a href="../../../reference/tlspolicy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../auth/" class="md-nav__link">
+      <a href="../../../auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/authpolicy/" class="md-nav__link">
+      <a href="../../../reference/authpolicy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -787,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rate-limiting/" class="md-nav__link">
+      <a href="../../../rate-limiting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -808,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/ratelimitpolicy/" class="md-nav__link">
+      <a href="../../../reference/ratelimitpolicy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,19 +858,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -867,7 +882,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             How-to Guides
@@ -881,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/secure-protect-connect/" class="md-nav__link">
+      <a href="../../secure-protect-connect/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/secure-protect-connect-single-multi-cluster/" class="md-nav__link">
+      <a href="../../secure-protect-connect-single-multi-cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,162 +935,36 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    DNS configuration and load balancing
+    DNS configuration
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
-            DNS configuration and load balancing
+            DNS configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    DNS Health Checks
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    DNS Health Checks
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supported-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported Providers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-of-health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration of Health Checks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reviewing-the-status-of-health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reviewing the status of Health Checks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reconfiguring-health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reconfiguring Health Checks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#removing-health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing Health Checks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Limitations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other Providers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
             
               
                 
@@ -1084,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dns-operator/docs/provider/" class="md-nav__link">
+      <a href="../../../../../dns-operator/docs/provider/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1148,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/gateway-tls/" class="md-nav__link">
+      <a href="../../gateway-tls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/auth-for-app-devs-and-platform-engineers/" class="md-nav__link">
+      <a href="../../auth-for-app-devs-and-platform-engineers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1233,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/kubernetes-tokenreview/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/kubernetes-tokenreview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1254,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/api-key-authentication/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/api-key-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1275,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/mtls-authentication/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/mtls-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1296,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/oidc-jwt-authentication/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/oidc-jwt-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1317,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/oauth2-token-introspection/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/oauth2-token-introspection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1338,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/passing-credentials/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/passing-credentials/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1359,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/http-basic-authentication/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/http-basic-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1380,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/anonymous-access/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/anonymous-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/token-normalization/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/token-normalization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1422,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/edge-authentication-architecture-festival-wristbands/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/edge-authentication-architecture-festival-wristbands/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1443,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/external-metadata/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/external-metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1464,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/oidc-user-info/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/oidc-user-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1485,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/resource-level-authorization-uma/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/resource-level-authorization-uma/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1506,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/json-pattern-matching-authorization/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/json-pattern-matching-authorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1527,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/oidc-rbac/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/oidc-rbac/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1548,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/opa-authorization/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/opa-authorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1569,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/kubernetes-subjectaccessreview/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/kubernetes-subjectaccessreview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1590,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/keycloak-authorization-services/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/keycloak-authorization-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1611,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/authzed/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/authzed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1632,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/injecting-data/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/injecting-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1653,7 +1542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/authenticated-rate-limiting-envoy-dynamic-metadata/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/authenticated-rate-limiting-envoy-dynamic-metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1674,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/deny-with-redirect-to-login/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/deny-with-redirect-to-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1695,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/envoy-jwt-authn-and-authorino/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/envoy-jwt-authn-and-authorino/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1716,7 +1605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/validating-webhook/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/validating-webhook/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1737,7 +1626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/caching/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/caching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1801,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/gateway-rl-for-cluster-operators/" class="md-nav__link">
+      <a href="../../gateway-rl-for-cluster-operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1822,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/authenticated-rl-for-app-developers/" class="md-nav__link">
+      <a href="../../authenticated-rl-for-app-developers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1843,7 +1732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guides/authenticated-rl-with-jwt-and-k8s-authnz/" class="md-nav__link">
+      <a href="../../authenticated-rl-with-jwt-and-k8s-authnz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1907,7 +1796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../observability/metrics/" class="md-nav__link">
+      <a href="../../../observability/metrics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1928,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../observability/examples/" class="md-nav__link">
+      <a href="../../../observability/examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1949,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../observability/tracing/" class="md-nav__link">
+      <a href="../../../observability/tracing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1970,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/observability/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/observability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2041,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api-quickstart/" class="md-nav__link">
+      <a href="../../../../../api-quickstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2139,7 +2028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0001-rlp-v2/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0001-rlp-v2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2160,7 +2049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0002-well-known-attributes/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0002-well-known-attributes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2181,7 +2070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0003-dns-policy/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0003-dns-policy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2202,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0004-policy-status/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0004-policy-status/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2223,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0005-single-cluster-dnspolicy/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0005-single-cluster-dnspolicy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2244,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0006-kuadrant_sub_components_configurations/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0006-kuadrant_sub_components_configurations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2265,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0007-policy-sync-v1/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0007-policy-sync-v1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2286,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0008-kuadrant-release-process/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0008-kuadrant-release-process/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2307,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0009-defaults-and-overrides/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0009-defaults-and-overrides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2328,7 +2217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0010-gateway-api-metrics-exporter/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0010-gateway-api-metrics-exporter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2349,7 +2238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../architecture/rfcs/0011-policy-machinery/" class="md-nav__link">
+      <a href="../../../../../architecture/rfcs/0011-policy-machinery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2455,7 +2344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2476,7 +2365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../development/" class="md-nav__link">
+      <a href="../../../development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2497,7 +2386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logging/" class="md-nav__link">
+      <a href="../../../logging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2561,7 +2450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/" class="md-nav__link">
+      <a href="../../../../../authorino/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2582,7 +2471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino-operator/" class="md-nav__link">
+      <a href="../../../../../authorino-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2603,7 +2492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/getting-started/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2624,7 +2513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/hello-world/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/hello-world/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2645,7 +2534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/architecture/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2666,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/features/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2722,7 +2611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/host-override/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/host-override/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2743,7 +2632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/user-guides/sharding/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/user-guides/sharding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2772,7 +2661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../authorino/docs/contributing/" class="md-nav__link">
+      <a href="../../../../../authorino/docs/contributing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2836,7 +2725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/" class="md-nav__link">
+      <a href="../../../../../limitador/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2857,7 +2746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/doc/how-it-works/" class="md-nav__link">
+      <a href="../../../../../limitador/doc/how-it-works/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2878,7 +2767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/doc/topologies/" class="md-nav__link">
+      <a href="../../../../../limitador/doc/topologies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2934,7 +2823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/limitador-server/" class="md-nav__link">
+      <a href="../../../../../limitador/limitador-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2955,7 +2844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/limitador-server/kubernetes/" class="md-nav__link">
+      <a href="../../../../../limitador/limitador-server/kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2976,7 +2865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/limitador-server/sandbox/" class="md-nav__link">
+      <a href="../../../../../limitador/limitador-server/sandbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3005,7 +2894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador/limitador/" class="md-nav__link">
+      <a href="../../../../../limitador/limitador/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3061,7 +2950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador-operator/" class="md-nav__link">
+      <a href="../../../../../limitador-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3082,7 +2971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador-operator/doc/storage/" class="md-nav__link">
+      <a href="../../../../../limitador-operator/doc/storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3103,7 +2992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador-operator/doc/rate-limit-headers/" class="md-nav__link">
+      <a href="../../../../../limitador-operator/doc/rate-limit-headers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3124,7 +3013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador-operator/doc/development/" class="md-nav__link">
+      <a href="../../../../../limitador-operator/doc/development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3145,11 +3034,75 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../limitador-operator/doc/logging/" class="md-nav__link">
+      <a href="../../../../../limitador-operator/doc/logging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3_7" id="__nav_9_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DNS Operator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            DNS Operator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../dns-operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
   </span>
   
 
@@ -3217,7 +3170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3238,7 +3191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/doc/generate-gateway-api-httproute/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/doc/generate-gateway-api-httproute/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3259,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/doc/generate-kuadrant-auth-policy/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/doc/generate-kuadrant-auth-policy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3280,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/doc/generate-kuadrant-rate-limit-policy/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/doc/generate-kuadrant-rate-limit-policy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3301,7 +3254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/doc/kuadrantctl-ci-cd/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/doc/kuadrantctl-ci-cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3322,7 +3275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/doc/openapi-apicurio/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/doc/openapi-apicurio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3343,7 +3296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kuadrantctl/doc/openapi-openshift-dev-spaces/" class="md-nav__link">
+      <a href="../../../../../kuadrantctl/doc/openapi-openshift-dev-spaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3389,8 +3342,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3399,65 +3350,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supported-providers" class="md-nav__link">
+  <a href="#basic-dns-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Providers
+      Basic DNS setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic DNS setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gateway-and-httproute-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway and HTTPRoute configuration
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-of-health-checks" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#configure-a-dnsprovider" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration of Health Checks
+      Configure a DNSProvider
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reviewing-the-status-of-health-checks" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#important-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Reviewing the status of Health Checks
+      Important Considerations
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reconfiguring-health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reconfiguring Health Checks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#removing-health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing Health Checks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Limitations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other Providers
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3476,7 +3406,7 @@
                   
 
   
-    <a href="https://github.com/kuadrant/kuadrant-operator/blob/main/doc/dnshealthchecks.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/kuadrant/kuadrant-operator/blob/main/doc/user-guides/dnspolicy/basic-dns-configuration.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3484,46 +3414,98 @@
   
 
 
-<h1 id="dns-health-checks">DNS Health Checks<a class="headerlink" href="#dns-health-checks" title="Permanent link">&para;</a></h1>
-<p>DNS Health Checks are a tool provided by some DNS Providers for ensuring the availability and reliability of your DNS Records and only publishing DNS Records that resolve to healthy workloads. Kuadrant offers a powerful feature known as DNSPolicy, which allows you to configure these health checks for all the managed DNS endpoints created as a result of that policy. This guide provides a comprehensive overview of how to set up, utilize, and understand these DNS health checks.</p>
-<h2 id="supported-providers">Supported Providers<a class="headerlink" href="#supported-providers" title="Permanent link">&para;</a></h2>
-<p>we currently only support <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html">AWS Route53 DNS Health checks</a>.</p>
-<h2 id="configuration-of-health-checks">Configuration of Health Checks<a class="headerlink" href="#configuration-of-health-checks" title="Permanent link">&para;</a></h2>
-<p>To configure a DNS health check, you need to specify the <code>healthCheck</code> section of the DNSPolicy, which includes important properties such as:</p>
-<ul>
-<li><code>endpoint</code>: This is the path where the health checks take place, usually represented as '/healthz' or something similar.</li>
-<li><code>port</code>: Specific port for the connection to be checked.</li>
-<li><code>protocol</code>: Type of protocol being used, like HTTP or HTTPS.</li>
-<li><code>FailureThreshold</code>: How many times we can tolerate a failure on this endpoint, before removing the related DNS entry.</li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>apiVersion:<span class="w"> </span>kuadrant.io/v1alpha1
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>kind:<span class="w"> </span>DNSPolicy
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>metadata:
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>name:<span class="w"> </span>prod-web
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span>namespace:<span class="w"> </span>multi-cluster-gateways
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>spec:
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span>targetRef:
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span>name:<span class="w"> </span>prod-web
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span>group:<span class="w"> </span>gateway.networking.k8s.io
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span>kind:<span class="w"> </span>Gateway
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span>healthCheck:
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span>endpoint:<span class="w"> </span><span class="s2">&quot;/health&quot;</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span>port:<span class="w"> </span><span class="m">443</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span>protocol:<span class="w"> </span><span class="s2">&quot;HTTPS&quot;</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span>failureThreshold:<span class="w"> </span><span class="m">5</span>
+  <h1>Basic dns configuration</h1>
+
+<h2 id="basic-dns-setup">Basic DNS setup<a class="headerlink" href="#basic-dns-setup" title="Permanent link">&para;</a></h2>
+<p>The document will cover the most basic DNS setup using the Kuadrant <a href="https://docs.kuadrant.io/0.11.0/kuadrant-operator/doc/reference/dnspolicy/">DNSPolicy</a> API. In order to follow this guide, it is expected that you have a cluster setup with the latest version of Kuadrant installed. Also as we are using DNS, it is also important that the Gateways are accessible either via your local network or via the public internet. DNSPolicy will work with any Gateway provider so it is not essential that you have Istio or Envoy Gateway installed, but you do need a <a href="https://gateway-api.sigs.k8s.io/implementations/">Gateway API provider</a> installed. We would recommend using Istio or Envoy Gateway as this will allow you to use some of the other policies provided by Kuadrant.</p>
+<h3 id="gateway-and-httproute-configuration">Gateway and HTTPRoute configuration<a class="headerlink" href="#gateway-and-httproute-configuration" title="Permanent link">&para;</a></h3>
+<p>With a Gateway provider installed, in order to configure DNS via <code>DNSPolicy</code>, you must first configure a Gateway with a listener that uses a specified hostname. You must also have a HTTPRoute resource attached to this gateway listener. Below are some simple examples of these resources (note we are not using a HTTPS listener for simplicity but that will also work):</p>
+<p><div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nn">---</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gateway</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gateway.networking.k8s.io/v1</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nt">metadata</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nt">spec</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">gatewayClassName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">istio</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">listeners</span><span class="p">:</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">test.example.com</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HTTP</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nn">---</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gateway.networking.k8s.io/v1</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HTTPRoute</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nt">metadata</span><span class="p">:</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toystore</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toystore</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nt">spec</span><span class="p">:</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="nt">parentRefs</span><span class="p">:</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="nt">hostnames</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;test.example.com&quot;</span><span class="p p-Indicator">]</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="nt">rules</span><span class="p">:</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matches</span><span class="p">:</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">            </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PathPrefix</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/toy&quot;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">          </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GET</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">            </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Exact</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/admin/toy&quot;</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">          </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POST</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">            </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Exact</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/admin/toy&quot;</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">          </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DELETE</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">      </span><span class="nt">backendRefs</span><span class="p">:</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toystore</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">          </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
 </span></code></pre></div>
-<p>This configuration sets up a DNS health check in AWS Route53 which will connect by HTTPS on port 443 and request the path /health.</p>
-<h2 id="reviewing-the-status-of-health-checks">Reviewing the status of Health Checks<a class="headerlink" href="#reviewing-the-status-of-health-checks" title="Permanent link">&para;</a></h2>
-<p>The DNS Record CR will show whether the health check has been created or not in the DNS Provider, and will also show any errors encountered when trying to create or update the health check configuration.</p>
-<p>To see the status of the executing health check requires logging in to the Route53 console to view the current probe results.</p>
-<h2 id="reconfiguring-health-checks">Reconfiguring Health Checks<a class="headerlink" href="#reconfiguring-health-checks" title="Permanent link">&para;</a></h2>
-<p>To reconfigure the health checks,  update the HealthCheck section of the DNS Policy, this will be reflected into all the health checks created as a result of this policy.</p>
-<h2 id="removing-health-checks">Removing Health Checks<a class="headerlink" href="#removing-health-checks" title="Permanent link">&para;</a></h2>
-<p>To remove the health checks created in AWS, delete the healthcheck section of the DNS Policy. All health checks will be deleted automatically, if the DNS Policy is deleted.</p>
-<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h2>
-<p>As Route53 will only perform health checks on an IP address, currently do not create health checks on DNS Policies that target gateways with hostname addresses.</p>
-<h2 id="other-providers">Other Providers<a class="headerlink" href="#other-providers" title="Permanent link">&para;</a></h2>
-<p>Although we intend to support integrating with the DNS Health checks provided by other DNS Providers in the future, we currently only support AWS Route53.</p>
+With these defined, we are ready to setup DNS via DNSPolicy.</p>
+<h3 id="configure-a-dnsprovider">Configure a DNSProvider<a class="headerlink" href="#configure-a-dnsprovider" title="Permanent link">&para;</a></h3>
+<p>The first step is to configure a DNSProvider. This is a simple kubernetes secret with credentials to access the DNS provider. With Kuadrant we support using <code>AWS Route53, Azure and GCP</code> as DNS providers. It is important that this credential has access to write and read to your DNS zones.</p>
+<p>More info on the various <a href="https://github.com/Kuadrant/dns-operator/blob/main/docs/provider.md">DNS Providers</a></p>
+<p>In this example we will configure an AWS route53 DNS provider:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl create secret generic aws-credentials \
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  --namespace=my-gateway-namespace \
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  --type=kuadrant.io/aws \
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  --from-literal=AWS_ACCESS_KEY_ID=XXXX \
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  --from-literal=AWS_REGION=eu-west-1 \
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  --from-literal=AWS_SECRET_ACCESS_KEY=XXX
+</span></code></pre></div>
+<p>With this in place we can now define our DNSPolicy resource:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kuadrant.io/v1</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DNSPolicy</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">metadata</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">basic-dnspolicy</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">spec</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">targetRef</span><span class="p">:</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gateway.networking.k8s.io</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Gateway</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">providerRefs</span><span class="p">:</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">aws-credentials</span>
+</span></code></pre></div>
+<p>This resource also needs to be created in the same namespace as your Gateway and the <code>targetRef</code> needs to reference your gateway. When this is done we can check the status of the DNSPolicy and the Gateway to check when it is ready.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kubectl wait dnspolicy/basic-dnspolicy -n my-gateway-namespace --for=&quot;condition=Ready=true&quot; --timeout=300s
+</span></code></pre></div>
+<p>If you look at the gateway status you should also see:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  - lastTransitionTime: &quot;2024-10-09T11:22:10Z&quot;
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    message: Object affected by DNSPolicy kuadrant-system/simple-dnspolicy
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    observedGeneration: 1
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    reason: Accepted
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    status: &quot;True&quot;
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    type: kuadrant.io/DNSPolicyAffected
+</span></code></pre></div>
+<p>DNS is now setup for your Gateway. After allowing a little time for the DNS propagate to the nameservers, you should be able to test the DNS using a dig command alternatively you can curl your endpoint.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>dig test.example.com +short
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>curl -v test.example.com/toy
+</span></code></pre></div>
+<h3 id="important-considerations">Important Considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h3>
+<p>With this guide, you have learned how to setup the most basic DNSPolicy. DNSPolicy is also capable of setting up advanced DNS record structure to help balance traffic across multiple gateways. With the most basic policy outlined here, you should not apply it to more than one gateway that shares a listener with the same host name. There is one exception to this rule, which is if all your gateways are using IP addresses rather than hostname addresses; in this case DNSPolicy will merge the IPs into a multi-value response. However, if your Gateways are using hostnames, DNSPolicy will set up a simple CNAME record and as there is only one record and CNAMEs cannot have multiple values by definition, one of the DNSPolicies (the last one to attempt to update the provider) will report an error. </p>
 
 
 
@@ -3555,7 +3537,7 @@
 
   <div class="sponsored-by">
     <p>
-      <a href="https://www.cncf.io/sandbox-projects/"><img src="../../../assets/images/cncf-color.png" class="logo" alt="CNCF logo"></a>
+      <a href="https://www.cncf.io/sandbox-projects/"><img src="../../../../../assets/images/cncf-color.png" class="logo" alt="CNCF logo"></a>
     </p>
     <p>
       We are a Cloud Native Computing Foundation sandbox project.
@@ -3569,10 +3551,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["0.11.0", "latest"], "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.action.edit", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["0.11.0", "latest"], "provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.bd41221c.min.js"></script>
       
     
   </body>

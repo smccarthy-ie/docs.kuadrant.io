@@ -14,7 +14,7 @@
         <link rel="prev" href="../../reference/dnspolicy/">
       
       
-        <link rel="next" href="../../tls/">
+        <link rel="next" href="../../../../dns-operator/docs/provider/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -689,6 +689,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dns-operator/docs/provider/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring DNS Providers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1057,7 +1078,7 @@
             
   
   <span class="md-ellipsis">
-    DNS configuration and load balancing
+    DNS configuration
   </span>
   
 
@@ -1067,30 +1088,9 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
-            DNS configuration and load balancing
+            DNS configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../dnshealthchecks/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DNS Health Checks
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -3182,6 +3182,70 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3_7" id="__nav_9_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DNS Operator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            DNS Operator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dns-operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3579,7 +3643,7 @@ Response:
 <h3 id="enable-dns-on-the-gateway">Enable DNS on the gateway<a class="headerlink" href="#enable-dns-on-the-gateway" title="Permanent link">&para;</a></h3>
 <p>Create a Kuadrant <code>DNSPolicy</code> to configure DNS:
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>kubectl<span class="w"> </span>-n<span class="w"> </span>my-gateways<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="s">apiVersion: kuadrant.io/v1alpha1</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="s">apiVersion: kuadrant.io/v1</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s">kind: DNSPolicy</span>
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="s">metadata:</span>
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="s">  name: prod-web</span>

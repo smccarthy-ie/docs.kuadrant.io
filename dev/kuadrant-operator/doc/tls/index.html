@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.kuadrant.io/dev/kuadrant-operator/doc/tls/">
       
       
-        <link rel="prev" href="../user-guides/gateway-dns/">
+        <link rel="prev" href="../../../dns-operator/docs/provider/">
       
       
         <link rel="next" href="../reference/tlspolicy/">
@@ -569,6 +569,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dns-operator/docs/provider/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring DNS Providers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1069,7 +1090,7 @@
             
   
   <span class="md-ellipsis">
-    DNS configuration and load balancing
+    DNS configuration
   </span>
   
 
@@ -1079,30 +1100,9 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
-            DNS configuration and load balancing
+            DNS configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dnshealthchecks/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    DNS Health Checks
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -3194,6 +3194,70 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3_7" id="__nav_9_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DNS Operator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            DNS Operator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dns-operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3551,7 +3615,7 @@
 <li>A reference to an existing Gateway API resource (<code>spec.targetRef</code>)</li>
 </ul>
 <h4 id="high-level-example-and-field-definition">High-level example and field definition<a class="headerlink" href="#high-level-example-and-field-definition" title="Permanent link">&para;</a></h4>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kuadrant.io/v1alpha1</span>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kuadrant.io/v1</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TLSPolicy</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-tls-policy</span>
